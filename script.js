@@ -14,3 +14,27 @@ function remainderOfTwo(value1, value2) {
 }
 
 console.log(remainderOfTwo(21, 4));
+
+
+// Function to compare the sum of two values with a predefined threshold.
+// Returns a string describing the relationship between the sum and the threshold.
+
+function lesserThan(value1, value2) {
+  let sum = 100;
+  let total = value1 + value2;
+
+  if (total < sum) {
+    return "the sum of the two value is less than the value of " + sum;
+  } 
+  
+  else if (total > sum) {
+    return    "the sum of the two value is greater than the value of " + sum;
+  }
+
+  else if(total == sum) {
+    return    "the sum of the two value is equal to the value of " + sum;
+
+}
+}
+console.log(lesserThan(50, 50));
+
